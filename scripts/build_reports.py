@@ -101,7 +101,7 @@ def main():
         if name=='pr3':text+='\n'+(ROOT/'docs/literature.md').read_text()
         doc=SimpleDocTemplate(str(dest/f'{name}-deskhand.pdf'),pagesize=A4,
                              rightMargin=50,leftMargin=50,topMargin=45,bottomMargin=53,
-                             title=f'{name.upper()}: экспериментальный стенд Deskhand',author='Александр Бобрусь')
+                             title=f'{name.upper()}: экспериментальный стенд Deskhand',author='Павлов Александр, Бобрусь Александр')
         doc.build(parse(text),onFirstPage=footer,onLaterPages=footer)
         print(dest/f'{name}-deskhand.pdf')
 

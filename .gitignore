@@ -8,3 +8,5 @@ results/raw/*
 results/processed/*
 !results/processed/.gitkeep
 .env
+results/environment.json
+results/repeatability.json

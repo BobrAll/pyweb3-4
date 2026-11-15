@@ -32,6 +32,7 @@ styles = {
 
 def inline(text):
     text = escape(text)
+    text = text.replace('₀', '<sub>0</sub>').replace('₁', '<sub>1</sub>')
     text = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', text)
     text = re.sub(r'`([^`]+)`', r'<font color="#126e82">\1</font>', text)
     text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<link href="\2" color="#126e82">\1</link>', text)

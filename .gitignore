@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+tmp/
+results/raw/*
+!results/raw/.gitkeep
+results/processed/*
+!results/processed/.gitkeep
+.env

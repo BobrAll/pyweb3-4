@@ -1,0 +1,9 @@
+{
+  "name": "deskhand-smoke", "seed": 20261115,
+  "policies": ["full", "bounded"], "steps": [10], "nodes": [50],
+  "apps": 3, "image_chars": 512, "diff_lines": 5,
+  "repetitions": 5, "aa_repetitions": 10, "warmup_passes": 1,
+  "keep_trees": 3, "keep_screenshots": 1,
+  "bootstrap_resamples": 1000, "practical_reduction": 0.30,
+  "timeout_seconds": 60
+}

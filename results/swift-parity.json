@@ -1,0 +1,6 @@
+{
+  "cases": 103,
+  "passed": true,
+  "excerpt_sha256": "71e57def4c0b5b0e41c51b776cfe1881fcb2339953acfd944cc465b522925ed7",
+  "swift": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0"
+}

@@ -1,0 +1,27 @@
+name: Reproduce smoke experiment
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests and shortened experiment
+        run: make smoke
+      - name: Check structural acceptance
+        run: |
+          python3 - <<'PY'
+          import json
+          d = json.load(open('results/processed/smoke/summary.json'))
+          assert d['checks']['invariants_ok']
+          assert d['checks']['aa_payload_identical']
+          assert d['checks']['generator_max_wait_cpu_pct'] < 80
+          assert all(r['practical_success'] for r in d['summary'])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-results
+          path: results/

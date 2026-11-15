@@ -1,0 +1,9 @@
+{
+  "name": "deskhand-history", "seed": 20261115,
+  "policies": ["full", "bounded"], "steps": [10, 30, 60], "nodes": [50, 500],
+  "apps": 3, "image_chars": 4096, "diff_lines": 20,
+  "repetitions": 10, "aa_repetitions": 10, "warmup_passes": 2,
+  "keep_trees": 3, "keep_screenshots": 1,
+  "bootstrap_resamples": 5000, "practical_reduction": 0.30,
+  "timeout_seconds": 60
+}

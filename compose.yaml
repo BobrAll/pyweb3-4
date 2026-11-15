@@ -1,0 +1,19 @@
+name: pyweb34
+services:
+  bench:
+    image: pyweb34-bench:1
+    build: .
+    cpus: 2.0
+    mem_limit: 1g
+    network_mode: none
+    volumes:
+      - ./results:/work/results
+    command: ["python", "-m", "runner.run_experiment", "--config", "${CONFIG:-configs/experiment.json}", "--batch", "${BATCH:-main}"]
+  analysis:
+    image: pyweb34-bench:1
+    cpus: 2.0
+    mem_limit: 1g
+    network_mode: none
+    volumes:
+      - ./results:/work/results
+    command: ["python", "-m", "analysis.analyze", "--batch", "${BATCH:-main}"]

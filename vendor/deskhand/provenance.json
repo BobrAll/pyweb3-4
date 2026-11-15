@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/BobrAll/deskhand",
+  "commit": "5514b8226ab47ddfc362360659eff252d22f9c69",
+  "path": "native/deskhand/Sources/DeskhandAgentKit/AgentLoop.swift",
+  "source_sha256": "1e4a5afdfdeeb616288c255a9a069f416b512045dd5c8494d53e508fe8c14803",
+  "excerpt_sha256": "71e57def4c0b5b0e41c51b776cfe1881fcb2339953acfd944cc465b522925ed7",
+  "license": "PolyForm Noncommercial 1.0.0"
+}

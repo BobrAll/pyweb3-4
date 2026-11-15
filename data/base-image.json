@@ -1,0 +1,12 @@
+{
+  "image": "python:3.12.8-slim-bookworm",
+  "platform": "linux/arm64",
+  "manifest_digest": "sha256:608e6ed31df49009fa6c242fb61b5386a1c002e40c2b9cb1958e0f1041aaf06a",
+  "config_digest": "sha256:70a416d0c62354c379ea7f473f5affd19f23c917adeb3a9c9b7ce39e6f97f3c9",
+  "layers": [
+    "sha256:4d2547c084994a809c138e688fbe4ee14eedbc6e2defc5b1c680edd16e291473",
+    "sha256:93aa4e5d5dd64d3d056de9a6b0264c88e1fea27495bb2ec64859a43cdbf4a556",
+    "sha256:792a49284dca71fdcab465b37c2c23ee9dde489334f201a65681cdf4e2ca6051",
+    "sha256:af32cf0c840cd32db3ac188b694c1459fe95a4dbcb7362109510a6043dabff86"
+  ]
+}

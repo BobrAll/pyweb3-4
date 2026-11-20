@@ -67,7 +67,7 @@ def parse(text):
                 ('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e1edf1')),
                 ('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#f5f8fa')]),
                 ('VALIGN',(0,0),(-1,-1),'TOP'),
-                ('BOTTOMPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),7),
+                ('BOTTOMPADDING',(0,0),(-1,-1),4),('TOPPADDING',(0,0),(-1,-1),4),
                 ('LINEBELOW',(0,0),(-1,0),.6,colors.HexColor('#9bb1bd')),
             ]))
             story += [table,Spacer(1,12)];continue
